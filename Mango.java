@@ -2,22 +2,21 @@
    package Assignment_Fruit;
 
 public class Mango {
-private double weight;
+private double weight_mango;
 
       public String toString() {
-        return "This is Mango created by Anjali";
-    }
+        return "This is Mango created by Anjali"; }
 
 
 // Getter
 
-    public double getWeight() {
-        return weight;
+    public double getMangoWeight() {
+        return weight_mango;
     }
 
     //Setter
-    public void setWeight(double newWeight) {
-        this.weight = newWeight;
+    public void setMangoWeight(double newWeight) {
+        this.weight_mango = newWeight;
     }
 }
 
