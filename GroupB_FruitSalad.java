@@ -10,12 +10,12 @@ import java.util.Scanner;
 
 public class GroupB_FruitSalad {
     public static void main(String[] args) {
-        Cherry cherry = new Cherry();
-        PineApple pineapple = new PineApple();
-        DragonFruit dragonfruit = new DragonFruit();
-        Apple apple = new Apple();
+        Cherry cherry = new Cherry(); // object created for Cherry.java class.
+        PineApple pineapple = new PineApple(); // object created for PineApple.java class.
+        DragonFruit dragonfruit = new DragonFruit(); // object created for DragonFruit.java class.
+        Apple apple = new Apple(); // object created for Apple.java class.
 
-        Scanner scan = new Scanner(System.in);
+        Scanner scan = new Scanner(System.in); // Scanner object created.
 
         System.out.println("\nWelcome to Team B's Fruit Salad Maker!\n");
         System.out.println("Please enter how many grams of Cherry your want in your salad: ");
@@ -27,7 +27,7 @@ public class GroupB_FruitSalad {
         System.out.println("Please enter how many grams of Apple your want in your salad: ");
         apple.setWeight(scan.nextDouble());
 
-        double totalgrams = cherry.getGrams() + pineapple.getWeight() + dragonfruit.getWeight() + apple.getWeight();
+        double totalgrams = cherry.getGrams() + pineapple.getWeight() + dragonfruit.getWeight() + apple.getWeight(); // Total salad grams calculated.
         String ingredients = "";
 
         /* Nested if else statements. */
@@ -92,7 +92,7 @@ public class GroupB_FruitSalad {
         }
 
         System.out.printf("\n\nThank you for your order! Your fruit salad is ready.");
-        System.out.printf("\nTotal weight of your salad is %.2fg. \nIngredients: %s", totalgrams, ingredients);
+        System.out.printf("\nTotal weight of your salad is %.2fg. \nIngredients: %s", totalgrams, ingredients); // Answer printed with formatings.
         scan.close();
     }
 }
