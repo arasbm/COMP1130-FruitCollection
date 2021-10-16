@@ -1,3 +1,4 @@
+
 package FruitSalad;
 
 public class Ugli {
@@ -10,3 +11,4 @@ public class Ugli {
         return weight;
     }
 }
+
