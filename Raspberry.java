@@ -1,14 +1,14 @@
-
 package FruitSalad;
 
 public class Raspberry {
-     return "This rapsberry was made by Jesutofunmi";
-
-    public void setWeight(double setWeight){
-        this.weight() = newWeight;
+    private double grams;
+    
+        public String toString(){
+            String toString = "This raspberry was created by Jesutofunmi";
+            return toString;
     }
-
-    public float getWeight(){
-        return weight;
-    }
+    
+    public double getGrams(){ return grams}
+    public void setGrams(double received){this.grams = received}
 }
+
