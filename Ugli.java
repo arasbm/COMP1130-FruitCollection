@@ -2,13 +2,14 @@
 package FruitSalad;
 
 public class Ugli {
-    return "This Ugli is created by Mohammed";
-
-    public void setweight (double newWeight){
-        this.weight() = newWeight;
+    private double grams;
+    
+        public String toString(){
+            String toString = "This ugli was created by Mohammed";
+            return toString;
     }
-    public float getWeight(){
-        return weight;
-    }
+    
+    public double getGrams(){ return grams}
+    public void setGrams(double received){this.grams = received}
 }
 
