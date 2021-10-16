@@ -1,12 +1,13 @@
 package FruitSalad;
 
 public class Apricot {
-    return "This Apricot was made by Daniel";
-
-    public void setWeight = (double newWeight){
-        this.weight() = newWeight;
+    private double grams;
+    
+        public String toString(){
+            String toString = "This apricot was created by Daniel";
+            return toString;
     }
-    public float getweight() {
-        return weight;
-    }
+    
+    public double getGrams(){ return grams}
+    public void setGrams(double received){this.grams = received}
 }
