@@ -1,8 +1,14 @@
-package Assignment_Fruit;
+package FruitSalad;
 
 public class Raspberry {
-	public String toString() {
-		return "This raspberry was created by Jesutofunmi";
-	}
-
+    private double grams;
+    
+        public String toString(){
+            String toString = "This raspberry was created by Jesutofunmi";
+            return toString;
+    }
+    
+    public double getGrams(){ return grams}
+    public void setGrams(double received){this.grams = received}
 }
+

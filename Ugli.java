@@ -1,5 +1,15 @@
+
+package FruitSalad;
+
 public class Ugli {
-    public String toString(){
-        return "This is an Ugli created by Mohamed Kaba";
+    private double grams;
+    
+        public String toString(){
+            String toString = "This ugli was created by Mohammed";
+            return toString;
     }
+    
+    public double getGrams(){ return grams}
+    public void setGrams(double received){this.grams = received}
 }
+
