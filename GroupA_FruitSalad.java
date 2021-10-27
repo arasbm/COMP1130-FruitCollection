@@ -1,5 +1,11 @@
 import java.util.Scanner;
 
+enum Toppings{
+    Vanilla,
+    Chocolate,
+    Butterscotch
+    }
+
 public class GroupA_FruitSalad{
     public static void main (String [] args) {
         
