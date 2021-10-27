@@ -23,6 +23,7 @@ public class GroupD_FruitSalad {
         Kiwi kiwi = new Kiwi();
         Litchi litchi = new Litchi();
         Fig fig = new Fig();
+        do {
 
         System.out.println("Welcome to Team D's Fruit Salad maker! Please enter how many grams of Fig you want in your salad:");
         fig.setWeight(console.nextDouble());            // Input weight for Fig
