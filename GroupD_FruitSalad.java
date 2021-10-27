@@ -65,6 +65,12 @@ public class GroupD_FruitSalad {
             } 
 
         }
+            
+            System.out.println("Would you like another order? \t Type Y for yes, N for no");
+decisionStr = console.next();
+decisionStr = decisionStr.toUpperCase();
+decisionChar = decisionStr.charAt(0);
+counter++;
         console.close();
     }
 }
