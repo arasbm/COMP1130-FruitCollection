@@ -1,12 +1,23 @@
 import java.util.Scanner;
 
 public class GroupD_FruitSalad {
+    
+    // Enum 
+    static enum TOPPINGS {
+        WHIPPED_CREAM,
+        CHOCOLATE,
+        LEMON_JUICE
+    }
 
     public static void main(String[] args) {
 
         // Variables
         Scanner console = new Scanner(System.in);
         double totalweight;
+        String decisionStr;
+        char decisionChar;
+        int toppingNumber;
+        int counter = 0;
 
         // Instantiation
         Kiwi kiwi = new Kiwi();
