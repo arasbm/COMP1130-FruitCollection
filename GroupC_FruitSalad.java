@@ -1,7 +1,11 @@
 package comp1130;
 
 import java.util.Scanner;
-
+	enum Toppings {
+    WHIPPEDCREAM,
+    CHOCOLATE,
+    LEMONJUICE,
+	}
 public class GroupC_FruitSalad {
 
     public static void main(String[] args) {
@@ -9,6 +13,8 @@ public class GroupC_FruitSalad {
         Grape gp = new Grape();
         Orange og = new Orange();
         int counter = 0;
+        int toppings;
+      
 
         //while loop begins
         String verify = "Y";
@@ -44,18 +50,25 @@ public class GroupC_FruitSalad {
                         System.out.print("Grapes."); 
                     }
                 }
+                System.out.println("");
+                System.out.println("\nSelect a topping of your choice: ");
+                System.out.println("");
+                System.out.print("Type 1 for WhippedCream \nType 2 for Chocolate \nType 3 for LemonJuice \nType 0 to continue without topping -- ");
+                toppings = sc.nextInt();
+                if(toppings == 1) {System.out.println("You selected " + Toppings.WHIPPEDCREAM + " topping");}
+                else if(toppings == 2) {System.out.println("You selected " + Toppings.CHOCOLATE +" topping");}
+                else if(toppings == 3) {System.out.println("You selected " + Toppings.LEMONJUICE + " topping");}
+                else if(toppings == 0) {System.out.println("You have not selected a topping");}
+                else {System.out.println("Wrong Input!! Please enter a value between 0-3.");}
             }
             System.out.println("\nWould you like to order another salad?(Y/N)");
             verify = sc.next();
             counter++;
             if (verify.equals("N")||verify.equals("n")){
                 System.out.println("Thank you for your order!");
-                
             }
         }
-        System.out.println("You have ordered "+counter+" salads");
+        System.out.println("You have ordered "+counter+" salad(s)");
         System.out.println("Have a great day ahead:)");
     }
-
-
 }
