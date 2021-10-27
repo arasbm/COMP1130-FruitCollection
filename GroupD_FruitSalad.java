@@ -75,7 +75,22 @@ public class GroupD_FruitSalad {
                 toppingNumber = console.nextInt();
             }
             
-            
+           // Outputs selected topping
+            switch(toppingNumber) {
+                case 1:
+                  System.out.println("Selected topping is " + TOPPINGS.WHIPPED_CREAM);
+                  break;
+                case 2:
+                  System.out.println("Selected topping is " + TOPPINGS.CHOCOLATE);
+                  break;
+                case 3:
+                  System.out.println("Selected topping is " + TOPPINGS.LEMON_JUICE);
+                  break;
+                case 4:
+                  System.out.println("No Selected topping");
+                  break;
+              }
+ 
 
         }
             
