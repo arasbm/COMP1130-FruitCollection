@@ -63,6 +63,19 @@ public class GroupD_FruitSalad {
             } else if (kiwi.getWeight() == 0 && litchi.getWeight() == 0 && fig.getWeight() > 0) {   // Only Fig
                 System.out.print("Fig");
             } 
+            
+            System.out.println("\nEnter the corresponding number for your topping:");
+            System.out.println("1: Whipped Cream \t 2: Chocolate \t 3: Lemon Juice \t 4: No Topping");
+            
+            toppingNumber = console.nextInt(); // Input number for topping selection
+            
+            // Checks if topping selection is correct
+            while (toppingNumber < 1 || toppingNumber > 4) {
+                System.out.println("Wrong input. Please try again!");
+                toppingNumber = console.nextInt();
+            }
+            
+            
 
         }
             
