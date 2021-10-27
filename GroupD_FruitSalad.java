@@ -23,6 +23,7 @@ public class GroupD_FruitSalad {
         Kiwi kiwi = new Kiwi();
         Litchi litchi = new Litchi();
         Fig fig = new Fig();
+        
         do {
 
         System.out.println("Welcome to Team D's Fruit Salad maker! Please enter how many grams of Fig you want in your salad:");
@@ -90,8 +91,6 @@ public class GroupD_FruitSalad {
                   System.out.println("No Selected topping");
                   break;
               }
- 
-
         }
             
             System.out.println("Would you like another order? \t Type Y for yes, N for no");
@@ -100,9 +99,10 @@ public class GroupD_FruitSalad {
             decisionChar = decisionStr.charAt(0);
             counter++;
             
-             } while (decisionChar == 'Y');
+         } while (decisionChar == 'Y');
 
         System.out.println("You placed " + counter + " order(s). Thank you!");
         console.close();
+        
     }
 }
