@@ -99,6 +99,10 @@ public class GroupD_FruitSalad {
             decisionStr = decisionStr.toUpperCase();
             decisionChar = decisionStr.charAt(0);
             counter++;
+            
+             } while (decisionChar == 'Y');
+
+        System.out.println("You placed " + counter + " order(s). Thank you!");
         console.close();
     }
 }
