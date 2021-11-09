@@ -1,17 +1,30 @@
 import java.util.Scanner;
 
 public class GroupD_FruitSalad {
+    
+    // Enum 
+    static enum TOPPINGS {
+        WHIPPED_CREAM,
+        CHOCOLATE,
+        LEMON_JUICE
+    }
 
     public static void main(String[] args) {
 
         // Variables
         Scanner console = new Scanner(System.in);
         double totalweight;
+        String decisionStr;
+        char decisionChar;
+        int toppingNumber;
+        int counter = 0;
 
         // Instantiation
         Kiwi kiwi = new Kiwi();
         Litchi litchi = new Litchi();
         Fig fig = new Fig();
+        
+        do {
 
         System.out.println("Welcome to Team D's Fruit Salad maker! Please enter how many grams of Fig you want in your salad:");
         fig.setWeight(console.nextDouble());            // Input weight for Fig
@@ -51,8 +64,45 @@ public class GroupD_FruitSalad {
             } else if (kiwi.getWeight() == 0 && litchi.getWeight() == 0 && fig.getWeight() > 0) {   // Only Fig
                 System.out.print("Fig");
             } 
-
+            
+            System.out.println("\nEnter the corresponding number for your topping:");
+            System.out.println("1: Whipped Cream \t 2: Chocolate \t 3: Lemon Juice \t 4: No Topping");
+            
+            toppingNumber = console.nextInt(); // Input number for topping selection
+            
+            // Checks if topping selection is correct
+            while (toppingNumber < 1 || toppingNumber > 4) {
+                System.out.println("Wrong input. Please try again!");
+                toppingNumber = console.nextInt();
+            }
+            
+           // Outputs selected topping
+            switch(toppingNumber) {
+                case 1:
+                  System.out.println("Selected topping is " + TOPPINGS.WHIPPED_CREAM);
+                  break;
+                case 2:
+                  System.out.println("Selected topping is " + TOPPINGS.CHOCOLATE);
+                  break;
+                case 3:
+                  System.out.println("Selected topping is " + TOPPINGS.LEMON_JUICE);
+                  break;
+                case 4:
+                  System.out.println("No Selected topping");
+                  break;
+              }
         }
+            
+            System.out.println("Would you like another order? \t Type Y for yes, N for no");
+            decisionStr = console.next();
+            decisionStr = decisionStr.toUpperCase();
+            decisionChar = decisionStr.charAt(0);
+            counter++;
+            
+         } while (decisionChar == 'Y');
+
+        System.out.println("You placed " + counter + " order(s). Thank you!");
         console.close();
+        
     }
 }
